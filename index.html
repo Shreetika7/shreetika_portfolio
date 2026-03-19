@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sritika Khatri Portfolio</title>
+    <title>Contact - Sritika Khatri</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        body{margin:0;padding:0;font-family:'DM Sans',sans-serif;background:#ffe6f0;color:#333;}
-        header{background:#ff99cc;color:white;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;box-shadow:0 4px 8px rgba(0,0,0,0.1);}
-        .logo{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;}
-        nav a{margin:0 12px;text-decoration:none;color:white;font-weight:500;transition:0.3s;}
-        nav a:hover{color:#ffe6f0;text-decoration:underline;}
-        .container{max-width:1000px;margin:auto;padding:50px 20px;text-align:center;}
-        h1,h2{font-family:'Playfair Display',serif;margin:20px 0;}
-        .tagline{font-style:italic;color:#b30059;font-size:1.1em;}
-        footer{text-align:center;padding:15px;background:#ff99cc;color:white;margin-top:40px;}
-        @media(max-width:600px){nav a{display:block;margin:5px 0;}header{flex-direction:column;align-items:flex-start;}}
+        *{box-sizing:border-box;}
+        body{margin:0;padding:0;font-family:'Jost',sans-serif;background:#fff5f9;color:#3a1a2e;}
+        header{background:linear-gradient(135deg,#f472b6 0%,#ec4899 100%);color:white;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;box-shadow:0 4px 20px rgba(236,72,153,0.3);}
+        .logo{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;letter-spacing:1px;}
+        div.nav a{margin:0 14px;text-decoration:none;color:rgba(255,255,255,0.92);font-weight:400;font-size:15px;letter-spacing:0.5px;transition:0.3s;}
+        div.nav a:hover{color:#fff;border-bottom:1px solid white;padding-bottom:2px;}
+
+        main{max-width:480px;margin:auto;padding:60px 24px;}
+        .page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,2.6rem);font-weight:600;color:#c2185b;text-align:center;margin-bottom:8px;}
+        .page-sub{text-align:center;color:#ad6e89;font-size:0.95rem;font-weight:300;margin-bottom:14px;}
+        .divider{width:60px;height:3px;background:linear-gradient(90deg,#f472b6,#ec4899);border-radius:2px;margin:0 auto 36px;}
+
+        .form-card{background:white;border-radius:20px;padding:36px 32px;box-shadow:0 8px 32px rgba(236,72,153,0.1);border:1px solid #fce7f3;}
+        label{display:block;font-size:0.8rem;font-weight:500;color:#ad1457;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:5px;margin-top:18px;}
+        input,textarea{width:100%;padding:12px 14px;border:1.5px solid #fce7f3;border-radius:10px;font-family:'Jost',sans-serif;font-size:0.95rem;color:#3a1a2e;background:#fff5f9;outline:none;transition:0.2s;}
+        input:focus,textarea:focus{border-color:#f472b6;background:white;}
+        textarea{resize:vertical;min-height:120px;}
+        button{width:100%;margin-top:24px;padding:14px;background:linear-gradient(135deg,#f472b6,#ec4899);color:white;border:none;border-radius:50px;font-family:'Jost',sans-serif;font-size:1rem;font-weight:500;letter-spacing:0.5px;cursor:pointer;box-shadow:0 4px 16px rgba(236,72,153,0.3);transition:0.3s;}
+        button:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(236,72,153,0.45);}
+        .note{text-align:center;font-size:0.78rem;color:#ad6e89;margin-top:12px;}
+
+        footer{text-align:center;padding:18px;background:linear-gradient(135deg,#f472b6,#ec4899);color:white;margin-top:60px;font-size:0.88rem;letter-spacing:0.3px;}
+        @media(max-width:600px){div.nav a{display:block;margin:5px 0;}header{flex-direction:column;align-items:flex-start;gap:10px;}.form-card{padding:24px 18px;}}
     </style>
 </head>
 <body>
 <header>
     <div class="logo">Sritika.</div>
-    <nav>
+    <div class="nav">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="videoDemo.html">Video Demo</a>
         <a href="contact.html">Contact</a>
         <a href="report.html">Report</a>
-    </nav>
+    </div>
 </header>
-<div class="container">
-    <h1>Hello, I'm Sritika Khatri</h1>
-    <p class="tagline">“Coding my way to creativity and design”</p>
-    <h2>Welcome to My Portfolio</h2>
-    <p>I discovered my passion for web development through the internet and started learning coding independently. I am currently studying at Northampton University. This portfolio showcases my skills, projects, and learning journey as a web developer, highlighting creativity, design, and coding projects I’ve developed over time.</p>
-</div>
+
+<main>
+    <h1 class="page-title">Contact Me</h1>
+    <p class="page-sub">Have a question or want to connect? Send me a message!</p>
+    <div class="divider"></div>
+
+    <div class="form-card">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Jane Doe">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="jane@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message here..."></textarea>
+
+        <button onclick="sendEmail()">Send Message ✉️</button>
+        <p class="note">This opens your email app — no data is stored.</p>
+    </div>
+</main>
+
 <footer>&copy; 2026 Sritika Khatri</footer>
+
+<script>
+    function sendEmail() {
+        var name    = document.getElementById('name').value.trim();
+        var email   = document.getElementById('email').value.trim();
+        var message = document.getElementById('message').value.trim();
+        if (!email || !message) { alert('Please fill in your email and message.'); return; }
+        var subject = 'Portfolio Enquiry from ' + (name || 'Visitor');
+        var body    = 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message;
+        window.location.href = 'mailto:youremail@example.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    }
+</script>
 </body>
-</html>
+</html
